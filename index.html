@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="bg" class="bg">
+
+      <div id="medal-count-wrapper">
+        <span>Medal count:</span>
+        <span id="medal-count">0</span>
+      </div>
+
+      <div id="instructions">
+        <span>Collect medals. Press space bar to jump.</span>
+      </div>
+
+      <div id="start-controls" class="start-controls">
+        <button id="start" class="start">Start</button>
+      </div>
+
+      <div id="game-over-controls" class="game-over-controls">
+        <h2>Game Over</h2>
+        <button id="game-over" class="game-over">Play Again?</button>
+      </div>
+
+      <div id="sprite" class="sprite stopped"></div>
+      <div id="floor"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

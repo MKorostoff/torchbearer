@@ -1,0 +1,91 @@
+body {
+  background-color: #292929;
+  font-family: 'VT323';
+}
+.bg {
+  background-image: url(img/bg.png);
+  height: 280px;
+  width: 1128px;
+  background-size: contain;
+  margin: auto;
+  background-repeat: no-repeat;
+  margin-top: calc((100vh - 300px)/2);
+  position: relative;
+  overflow: hidden;
+}
+.sprite {
+  background-image: url(img/sprite.gif);
+  background-repeat: no-repeat;
+  width: 92px;
+  background-size: contain;
+  height: 120px;
+  position: absolute;
+  bottom: 0;
+  left: 260px;
+  z-index: 10;
+}
+.sprite.stopped {
+  background-image: url(img/static_sprite.png);
+}
+.hurdle {
+  background-image: url(img/hurdle.png);
+  background-repeat: no-repeat;
+  width: 41px;
+  height: 100px;
+  position: absolute;
+  bottom: -40px;
+  left: 100%;
+  background-size: contain;
+  transition: left linear 4s;
+}
+.medal {
+  background-image: url(img/medal.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 30px;
+  left: 100%;
+  background-size: contain;
+  transition: left linear 4s;
+}
+#instructions, #medal-count-wrapper {
+  font-family: 'VT323';
+  color: pink;
+}
+#instructions {
+  font-size: 20px;
+  margin-top: 2em;
+  text-align: center;
+  display: none;
+}
+#instructions span {
+  background: black;
+}
+#medal-count-wrapper {
+  right: 10px;
+  font-size: 40px;
+  text-align: center;
+}
+.game-over-controls {
+  display: none;
+}
+.start-controls, .game-over-controls {
+  text-align: center;
+  margin-top: 3em;
+}
+.start, .game-over {
+  font-family: 'VT323';
+  background-color: black;
+  color: #fbcb7a;
+  font-size: 2em;
+}
+#floor {
+  background-image: url(img/floor.png);
+  height: 50px;
+  background-size: contain;
+  background-repeat: repeat-x;
+  bottom: -11px;
+  position: absolute;
+  width: 200%;
+}
